@@ -319,11 +319,12 @@ a:hover span {
     }
 
     .hero-section-content-bubble {
-        width: 400px;
-        max-width: 430px;
-        min-width: 340px;
+        width: 90%;
         margin: auto;
         position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 24px;
     }
 
     .hero-content{
@@ -352,6 +353,11 @@ a:hover span {
 
     nav {
         display: none;
+    }
+
+    .hero-section {
+        width: 100vw;
+        height: 100vh;
     }
 }
 
