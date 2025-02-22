@@ -54,6 +54,7 @@ html, body {
     background-color: #000;
     font-family: 'DM Sans', sans-serif;
     overflow: none;
+    scroll-behavior: none;
     width: 100vw;
     height: 100vh;
 }
@@ -253,10 +254,23 @@ a:hover span {
     gap: 8px;
     justify-content: center;
     align-items: center;
+    transform: translateX(12px);
+    transition: all 0.2s ease;
 }
 
 .hidden svg {
-    display: none;
+    opacity: 0;
+    transform: translateX(-12px);
+    transition: all 0.2s ease;
+}
+
+.key-hiring-btn:hover svg {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.key-hiring-btn:hover .hidden {
+    transform: translateX(0);
 }
 
 .hidden-bottom h3 {
