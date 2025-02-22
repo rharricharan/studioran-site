@@ -1,47 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-
-@font-face {
-    font-family: 'Nutgame';
-    src: url('assets/fonts/Nutgame.ttf') format('truetype');
-    font-weight: 400;
-    font-style: 400;
-}
-
-@font-face {
-    font-family: 'Nutgame';
-    src: url('assets/fonts/NutgameDEMO-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: 300;
-}
-
-@font-face {
-    font-family: 'Nutgame';
-    src: url('assets/fonts/NutgameDEMO-Bold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: 600;
-}
-
-@font-face {
-    font-family: 'Nutgame';
-    src: url('assets/fonts/NutgameDEMO-BoldItalic.ttf') format('truetype');
-    font-weight: 650;
-    font-style: 650;
-}
-
-@font-face {
-    font-family: 'Nutgame';
-    src: url('assets/fonts/NutgameDEMO-Italic.ttf') format('truetype');
-    font-weight: 450;
-    font-style: 450;
-}
-
-@font-face {
-    font-family: 'Nutgame';
-    src: url('assets/fonts/NutgameDEMO-LightItalic.ttf') format('truetype');
-    font-weight: 350;
-    font-style: 350;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600;700&display=swap');
 
 * {
