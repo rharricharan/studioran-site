@@ -322,8 +322,8 @@ a:hover span {
         width: 400px;
         max-width: 430px;
         min-width: 340px;
-        left: 15px;
-        bottom: 24px;
+        margin: auto;
+        position: absolute;
     }
 
     .hero-content{
@@ -351,7 +351,7 @@ a:hover span {
     }
 
     nav {
-        position: relative;
+        display: none;
     }
 }
 
