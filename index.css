@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Nutgame';
+    src: url('assets/fonts/Nutgame.ttf') format('truetype');
+    font-weight: 400;
+    font-style: 400;
+}
+
+@font-face {
+    font-family: 'Nutgame';
+    src: url('assets/fonts/NutgameDEMO-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: 300;
+}
+
+@font-face {
+    font-family: 'Nutgame';
+    src: url('assets/fonts/NutgameDEMO-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: 600;
+}
+
+@font-face {
+    font-family: 'Nutgame';
+    src: url('assets/fonts/NutgameDEMO-BoldItalic.ttf') format('truetype');
+    font-weight: 650;
+    font-style: 650;
+}
+
+@font-face {
+    font-family: 'Nutgame';
+    src: url('assets/fonts/NutgameDEMO-Italic.ttf') format('truetype');
+    font-weight: 450;
+    font-style: 450;
+}
+
+@font-face {
+    font-family: 'Nutgame';
+    src: url('assets/fonts/NutgameDEMO-LightItalic.ttf') format('truetype');
+    font-weight: 350;
+    font-style: 350;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header {
+    width: 100vw;
+    padding: 24px 32px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding: 0;
+}
+
+.svg-container img {
+    width: 72px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.stagger-link {
+    text-decoration: none;
+    overflow: hidden;
+}
+
+li {
+    overflow: hidden;
+}
+
+.stagger-link-text {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+a[stagger-link] [stagger-link-text]{
+    text-shadow: 0px 1em 0px rgba(255, 255, 255, 0.8); 
+}
+
+.home-wrapper {
+    width: 100vw;
+}
+
+.hero-section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+    width: 20em;
+}
+
+.hero-content h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+    font-size: 1em;
+    mix-blend-mode: difference;
+    text-align: left;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-section-content-bubble {
+    padding: 32px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 72px;
+    bottom: 72px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.025);
+}
+
+.hero-section-content-bubble h2 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    line-height: 160%;
+    font-family: 'Inter', sans-serif;
+    margin-top: 8px;
+    padding: 0;
+}
+
+.hero-section-content-bubble-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.hero-section-content-bubble-buttons a {
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-section-content-bubble-buttons div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.hero-section-content-bubble-buttons div span {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.hero-section-content-bubble-buttons a span {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.8px;
+}
+
+a:hover {
+    background-color: rgba(49, 49, 227, 1);
+    cursor: pointer;
+}
+
+a:hover span {
+    color: white;
+}
+
+.key-hiring-btn {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
