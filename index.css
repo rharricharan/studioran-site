@@ -121,6 +121,7 @@ a[stagger-link] [stagger-link-text]{
 .home-wrapper {
     width: 100vw;
     overflow: none;
+    scroll-behavior: none;
 }
 
 .hero-section {
