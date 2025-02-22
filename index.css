@@ -50,9 +50,10 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     background-color: #000;
     font-family: 'DM Sans', sans-serif;
+    overflow: none;
 }
 
 header {
@@ -91,6 +92,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
+    opacity: 0;
 }
 
 .stagger-link {
@@ -115,6 +117,7 @@ a[stagger-link] [stagger-link-text]{
 
 .home-wrapper {
     width: 100vw;
+    overflow: none;
 }
 
 .hero-section {
@@ -125,12 +128,15 @@ a[stagger-link] [stagger-link-text]{
 
 .hero-content {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 80%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 3;
     width: 20em;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .hero-content h1 {
@@ -143,14 +149,25 @@ a[stagger-link] [stagger-link-text]{
     text-align: left;
 }
 
-video {
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    flex: 1;
+}
+
+.key-hiring-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 8px;
 }
 
 .hero-section-content-bubble {
-    padding: 32px;
+    padding: 16px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -158,8 +175,8 @@ video {
     left: 72px;
     bottom: 72px;
     width: 400px;
-    background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 8, 0.5);
+    backdrop-filter: blur(50px);
     border: 1px solid rgba(255, 255, 255, 0.025);
 }
 
@@ -179,27 +196,17 @@ video {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 6px;
+    gap: 3px;
+    margin-top: 24px;
 }
 
-.hero-section-content-bubble-buttons a {
-    padding: 8px 16px;
-    background-color: rgba(255, 255, 255, 0.05);
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.open {
+    margin-bottom: 12px;
 }
 
 .hero-section-content-bubble-buttons div {
     display: flex;
     flex-direction: row;
-    margin-top: 24px;
-    margin-bottom: 12px;
 }
 
 .hero-section-content-bubble-buttons div span {
@@ -210,7 +217,7 @@ video {
 }
 
 .hero-section-content-bubble-buttons a span {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.9);
     font-weight: 400;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -228,28 +235,41 @@ a:hover span {
 
 .key-hiring-btn {
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-}
-
-span {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    align-items: flex-start;
 }
 
 .hidden {
     display: flex;
     flex-direction: row;
     gap: 8px;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
-h3 {
+.hidden svg {
+    display: none;
+}
+
+.hidden-bottom h3 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.hidden h3 {
     font-size: 12px;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
-    color: white;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.5);
     margin: 0;
     padding: 0;
 }
