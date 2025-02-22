@@ -128,12 +128,14 @@ a[stagger-link] [stagger-link-text]{
     width: 100vw;
     height: 100vh;
     position: relative;
+    overflow: hidden;
+    scroll-behavior: none;
 }
 
 .hero-content {
     position: absolute;
-    top: 30%;
-    left: 80%;
+    top: 20%;
+    left: 70%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 3;
@@ -272,6 +274,10 @@ a:hover span {
 
 .key-hiring-btn:hover .hidden {
     transform: translateX(0);
+}
+
+.key-hiring-btn:hover h3 {
+    color: white;
 }
 
 .hidden-bottom h3 {
