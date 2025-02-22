@@ -321,8 +321,7 @@ a:hover span {
     .hero-section-content-bubble {
         width: 400px;
         max-width: 430px;
-        min-width: 390px;
-        top: auto;
+        min-width: 340px;
         left: 15px;
         bottom: 24px;
     }
@@ -349,6 +348,10 @@ a:hover span {
 
     .hidden-bottom h3 {
         font-size: 12px;
+    }
+
+    nav {
+        position: relative;
     }
 }
 
