@@ -254,12 +254,43 @@ a:hover span {
     padding: 0;
 }
 
-.contact {
-    margin-top: 24px;
-}
-
 .contact:hover {
     background-color: blueviolet;
+}
+
+.bottom-menu-selector {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    width: 100%;
+    gap: 3px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.news:hover {
+    background-color: darkorange;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width:1024px) {
